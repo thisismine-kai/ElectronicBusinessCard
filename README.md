@@ -1,6 +1,6 @@
 06月15日
 
-### 🔧 実装した機能・コンポーネント
+###  実装した機能・コンポーネント
 
 1. **BusinessCardコンポーネント（`src/components/BusinessCard.jsx`）作成**
 
