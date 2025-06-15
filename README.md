@@ -1,6 +1,7 @@
 06月15日
 
 ###  実装した機能・コンポーネント
+実行コマンド：npm run dev
 
 1. **BusinessCardコンポーネント（`src/components/BusinessCard.jsx`）作成**
 
