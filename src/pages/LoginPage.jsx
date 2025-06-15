@@ -1,4 +1,8 @@
 //src/pages/Loginpage.jsx
+
+import SidebarList from "../components/SideBarList";
+
+
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
@@ -22,7 +26,23 @@ const LoginPage = () => {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div style={{ 
+       display: 'flex',           // ← 横並び
+      minHeight: '100vh',        // ← 高さ100%
+      padding: "2rem",
+      backgroundColor: "#ffffff", // ← 白背景を明示
+      color: "#000000",           // ← 黒文字を明示         // ← 画面いっぱいに表示（お好みで）
+      }}>
+
+        {/* 左サイドバー */}
+              <div style={{
+                width: '220px',
+                backgroundColor: '#1e1e1e',
+                padding: '1rem',
+                color: 'white'
+              }}>
+                <SidebarList />
+              </div>
       <h2>ログイン</h2>
       <form onSubmit={handleLogin}>
         <input
@@ -43,6 +63,7 @@ const LoginPage = () => {
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
+
   );
 };
 

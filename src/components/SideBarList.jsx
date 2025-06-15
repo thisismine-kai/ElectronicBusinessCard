@@ -7,7 +7,12 @@ import { FaFolderOpen } from 'react-icons/fa'
 	import { MdContactPage } from 'react-icons/md'
 	import { FaCheckCircle } from 'react-icons/fa'
 
+  import { useNavigate } from 'react-router-dom';
+
+
 function SidebarList() {
+  
+  const navigate = useNavigate(); 
   return (
    <div style={{
   display: 'grid',
@@ -27,7 +32,7 @@ function SidebarList() {
 <IconTextButton
   icon={MdContactPage}
   label="名刺リスト"
-  onClick={() => console.log('Home clicked')}//画面遷移のパスを書いてください
+   onClick={() => navigate('/mycardbox')}//画面遷移のパスを書いてください
 />
 
 <IconTextButton
@@ -39,7 +44,7 @@ function SidebarList() {
 <IconTextButton
   icon={FaCheckCircle}
   label="ログイン画面テスト"
-  onClick={() => console.log('Home clicked')}//画面遷移のパスを書いてください
+  onClick={() => navigate('/')}//画面遷移のパスを書いてください
 />
 
 
