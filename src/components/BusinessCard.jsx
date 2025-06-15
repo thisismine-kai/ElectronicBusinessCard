@@ -6,7 +6,6 @@ function BusinessCard({name, github, skills, avatar}) {
       border: '1px solid #ccc',            // 薄いグレーの枠線
       borderRadius: '8px',                 // 四隅を丸くする（角の丸み）
       padding: '1rem',                     // 内側に余白
-      //textAlign: 'center',                 // 中身を中央寄せ
       backgroundColor: '#fff'              // 背景を白にする
     }}>
 
