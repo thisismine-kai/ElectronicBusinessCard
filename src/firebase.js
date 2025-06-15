@@ -3,10 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "ここに貼る",
-  authDomain: "ここに貼る",
-  projectId: "ここに貼る",
-  ...
+  apiKey: "AIzaSyBYql0Vh1uFGUKfViIqnzmJp5nphrPQKGQ",
+  authDomain: "electronicbusinesscard-f3372.firebaseapp.com",
+  projectId: "electronicbusinesscard-f3372",
+  stojectId: "electronicbusinesscard-f3372",
+  storageBucket: "electronicbusinesscard-f3372.appspot.com",
+  messagingSenderId: "746502358122",
+  appId:"1:746502358122:web:3a282ad08445165cd2f613",
 };
 
 const app = initializeApp(firebaseConfig);
