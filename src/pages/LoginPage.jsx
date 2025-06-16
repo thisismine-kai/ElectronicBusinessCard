@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import "./LoginPage.css";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -26,42 +27,37 @@ const LoginPage = () => {
   };
 
   return (
-    <div style={{ 
-       display: 'flex',           // ← 横並び
-      minHeight: '100vh',        // ← 高さ100%
-      padding: "2rem",
-      backgroundColor: "#ffffff", // ← 白背景を明示
-      color: "#000000",           // ← 黒文字を明示         // ← 画面いっぱいに表示（お好みで）
-      }}>
+    <div className="login-appname-container">
+      <div className="app-name-tag">
+        <h1>ElectronicBisinessCard</h1>
+      </div>
+      <div className="login-container">
+        {/* <h2>
+          login-form
+        </h2> */}
+        <form onSubmit={handleLogin}>
+          <input
+            type="email"
+            placeholder="e-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          /><br/>
+          <input
+            type="password"
+            placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          /><br />
+          <div className="button-container">
+            <button type="submit">Login</button>
+          </div>
+        </form>
 
-        {/* 左サイドバー */}
-              <div style={{
-                width: '220px',
-                backgroundColor: '#1e1e1e',
-                padding: '1rem',
-                color: 'white'
-              }}>
-                <SidebarList />
-              </div>
-      <h2>ログイン</h2>
-      <form onSubmit={handleLogin}>
-        <input
-          type="email"
-          placeholder="メールアドレス"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        /><br /><br />
-        <input
-          type="password"
-          placeholder="パスワード"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        /><br /><br />
-        <button type="submit">ログイン</button>
-      </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+        
+        {error && <p>{error}</p>}
+      </div>
     </div>
 
   );
