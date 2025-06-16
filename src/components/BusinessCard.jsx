@@ -6,7 +6,11 @@ function BusinessCard({name, github, skills, avatar}) {
       border: '1px solid #ccc',            // 薄いグレーの枠線
       borderRadius: '8px',                 // 四隅を丸くする（角の丸み）
       padding: '1rem',                     // 内側に余白
-      backgroundColor: '#fff'              // 背景を白にする
+      backgroundColor: '#fff' ,             // 背景を白にする
+
+      height: '300px',         // ← カードの高さ（例）
+      width: '100%',           // ← gridに合わせるためそのまま
+      boxSizing: 'border-box'  // ← padding含めてサイズ調整
     }}>
 
 
@@ -27,7 +31,10 @@ function BusinessCard({name, github, skills, avatar}) {
       </div>
 
       {/* GitHubリンクを表示 */}
-      <a href={github} target="_blank">
+      <a href={github} target="_blank" style={{
+        maxWidth: '100%', 
+         wordBreak: 'break-all',
+      }}>
         {github}
       </a>
 
@@ -51,4 +58,4 @@ function BusinessCard({name, github, skills, avatar}) {
     </div>
   );
 }
-export default BusinessCard; 
+export default BusinessCard;

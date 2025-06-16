@@ -1,0 +1,108 @@
+/* 親要素のbodyかhtmlに高さ100%を指定しておく */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: #ff7f50;
+     */
+    background: linear-gradient(to bottom, #ffcc99, #ff9966, #ff6600);
+
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-appname-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* ← これが縦並び */
+    justify-content: center;
+    /* 縦方向中央 */
+    align-items: center;
+    /* 横方向中央 */
+    justify-content: flex-start;
+    /* ← 上寄せに変更 */
+    padding-top: 3rem;
+    /* ← 上からの距離を調整 */
+}
+
+.app-name-tag {
+    text-align: center;
+    color: white;
+
+}
+
+/* 中央寄せ用のラッパー */
+body {
+    display: flex;
+    justify-content: center;
+    /* 横中央 */
+    align-items: center;
+    /* 縦中央 */
+}
+
+/* ログインフォーム自体のスタイル */
+.login-container {
+    background-color: #2c2c2c;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.login-container input::placeholder {
+    color: #bbbbbb;
+}
+
+.login-container button {
+    width: 70%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #ff9900, #ff6600);
+    /* オレンジグラデーション */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* ほんのり影 */
+}
+
+.login-container button:hover {
+    /* background-color: black;
+    color: white; */
+  background: linear-gradient(135deg, #ff7f50, #e65c00); /* ホバー時少し濃く */
+  transform: scale(1.03); /* ちょっと浮き上がる感 */
+}
+
+.button-container {
+    text-align: center;
+}
+
+.login-container p {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+}

@@ -37,7 +37,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoginPage from './pages/LoginPage' // ページの場所に合わせてパス調整
-import MyCardBox from './MyCardBox' 
+import MyCardBox from './pages/MyCardBox' 
 
 function App() {
   return (
