@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import "./LoginPage.css";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -22,27 +23,40 @@ const LoginPage = () => {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
-      <h2>ログイン</h2>
-      <form onSubmit={handleLogin}>
-        <input
-          type="email"
-          placeholder="メールアドレス"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        /><br /><br />
-        <input
-          type="password"
-          placeholder="パスワード"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        /><br /><br />
-        <button type="submit">ログイン</button>
-      </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+    <div className="login-appname-container">
+      <div className="app-name-tag">
+        <h1>ElectronicBisinessCard</h1>
+      </div>
+      <div className="login-container">
+        {/* <h2>
+          login-form
+        </h2> */}
+        <form onSubmit={handleLogin}>
+          <input
+            type="email"
+            placeholder="e-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          /><br/>
+          <input
+            type="password"
+            placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          /><br />
+          <div className="button-container">
+            <button type="submit">Login</button>
+          </div>
+        </form>
+
+        
+        {error && <p>{error}</p>}
+      </div>
     </div>
+      
+
   );
 };
 
