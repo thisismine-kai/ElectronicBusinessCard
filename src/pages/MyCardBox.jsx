@@ -1,5 +1,5 @@
-import BusinessCardList from './components/BusinessCardList';
-import SidebarList from './components/SidebarList';
+import BusinessCardList from '../components/BusinessCardList';
+import SidebarList from '../components/SideBarList';
 
 function MyCardBox() {
   return (
