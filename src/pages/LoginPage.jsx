@@ -1,4 +1,8 @@
 //src/pages/Loginpage.jsx
+
+import SidebarList from "../components/SideBarList";
+
+
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
@@ -55,7 +59,6 @@ const LoginPage = () => {
         {error && <p>{error}</p>}
       </div>
     </div>
-      
 
   );
 };
