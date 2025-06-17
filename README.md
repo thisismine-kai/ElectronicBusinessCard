@@ -1,6 +1,6 @@
 コマンド一覧
 
-###　実行コマンド：npm run dev
+###  実行コマンド：npm run dev
 
 ###  ★GitHubコマンド一覧
 
