@@ -1,15 +1,15 @@
 import { skillIcons } from '../data/skillIcons';
 
-function BusinessCard({name, github, skills, avatar}) {
+function BusinessCard({name, github, skills, avatar, message}) {
   return (
     <div style={{
       border: '1px solid #ccc',            // 薄いグレーの枠線
       borderRadius: '8px',                 // 四隅を丸くする（角の丸み）
       padding: '1rem',                     // 内側に余白
-      backgroundColor: '#fff' ,             // 背景を白にする
+      backgroundColor: '#3b3b3b' ,             // 背景を白にする
 
-      height: '300px',         // ← カードの高さ（例）
-      width: '100%',           // ← gridに合わせるためそのまま
+      height: '260px',     // ← カードの高さ（例）
+      width: '460px',           // ← gridに合わせるためそのまま
       boxSizing: 'border-box'  // ← padding含めてサイズ調整
     }}>
 
@@ -26,7 +26,10 @@ function BusinessCard({name, github, skills, avatar}) {
       }}/>
 
        {/* ユーザー名を表示（見出しサイズ） */}
-      <h3 style={{color: '#007bff'}}>{name}</h3>
+      <h3 style={{
+        color: '#ffffff',
+        fontSize: '1.5rem', // フォントサイズを大きく
+        }}>{name}</h3>
 
       </div>
 
@@ -34,8 +37,20 @@ function BusinessCard({name, github, skills, avatar}) {
       <a href={github} target="_blank" style={{
         maxWidth: '100%', 
          wordBreak: 'break-all',
+         fontSize: '1rem',
+         textDecoration: 'underline', // 下線を引く
       }}>
-        {github}
+        <img 
+        src="src\assets\GitHub_Invertocat_Light.png"  // GitHubアイコンのパス
+        alt="GitHub Icon"
+        style={{
+          width: '30px',                // アイコンの幅
+          height: '25px',               // アイコンの高さ
+         verticalAlign: 'middle',      // テキストとアイコンを中央揃え
+         marginRight: '0.5rem'         // アイコンとテキストの間に余白
+        }}
+        />
+         GitHub
       </a>
 
       <div style={{ marginTop: '0.5rem' }}>
@@ -48,12 +63,17 @@ function BusinessCard({name, github, skills, avatar}) {
             borderRadius: '4px',           // 角を軽く丸める
             display: 'inline-block',       // 横並びタグっぽく
             fontSize: '0.9rem' ,
-            color: '#007bff'            
+            color: '#000000',
+            background: 'linear-gradient(to right, #ff7e5f, #feb47b)'
           }}>
-            {skillIcons[skill]}{skill}                         {/* スキル名を表示 */}
+            {skillIcons[skill]}{skill}　{/* スキル名を表示 */}
           </span>
         ))}
       </div>
+      <p style={{ fontStyle: 'italic', color: '#ffffff', marginTop: '0.5rem' }}>
+        Message:<br />
+        {message} {/* メッセージを表示 */}
+</p>
 
     </div>
   );
