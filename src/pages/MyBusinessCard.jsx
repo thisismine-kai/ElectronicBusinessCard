@@ -95,5 +95,6 @@ function MyBusinessCard() {
     </main>
   </div>
 </div>
-  )
+  );
+}
 export default MyBusinessCard;
