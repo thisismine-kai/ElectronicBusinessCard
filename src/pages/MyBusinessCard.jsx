@@ -11,7 +11,7 @@ function MyBusinessCard() {
   return (
     <div style={{
       display: 'flex',
-      minHeight: '150vh',
+      minHeight: '100vh',
       backgroundColor: "#f0f0f0",
       boxSizing: 'border-box',
       color: "#000000",
