@@ -34,7 +34,7 @@ function MyBusinessCard() {
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: '#000000',
+        backgroundColor: '#f0f0f0',
       }}>
         {/* ヘッダー */}
         <header style={{
