@@ -20,7 +20,7 @@ function MyBusinessCard() {
       
       {/* 左サイドバー */}
       <div style={{
-        width: '220px',
+        width: '160px',
         backgroundColor: '#1e1e1e',
         padding: '1rem',
         color: 'white',
@@ -41,9 +41,9 @@ function MyBusinessCard() {
         {/* 名刺カードのコンテナ */}
         <section style={{
           width: '100%',
-          maxWidth: '1000px',      // 最大幅広げてカード大きく
+          maxWidth: '1200px',      // 最大幅広げてカード大きく
           backgroundColor: '#fff',
-          padding: '2.5rem',
+          padding: '1.5rem',
           borderRadius: '12px',
           boxShadow: '0 6px 15px rgba(0,0,0,0.1)',
         }}>
