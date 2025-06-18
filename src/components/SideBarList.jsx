@@ -26,7 +26,7 @@ function SidebarList() {
   <IconTextButton
   icon={FaUserCircle}
   label="プロフィール"
-  onClick={() => console.log('Home clicked')}//画面遷移のパスを書いてください
+  onClick={() => navigate('/mybusinesscard')}
 />
 
 <IconTextButton

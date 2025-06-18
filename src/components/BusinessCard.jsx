@@ -8,8 +8,8 @@ function BusinessCard({name, github, skills, avatar, message}) {
       padding: '1rem',                     // 内側に余白
       backgroundColor: '#3b3b3b' ,             // 背景を白にする
 
-      height: '260px',     // ← カードの高さ（例）
-      width: '460px',           // ← gridに合わせるためそのまま
+      height: '280px',     // ← カードの高さ（例）
+      width: '500px',           // ← gridに合わせるためそのまま
       boxSizing: 'border-box'  // ← padding含めてサイズ調整
     }}>
 
@@ -71,7 +71,8 @@ function BusinessCard({name, github, skills, avatar, message}) {
         ))}
       </div>
       <p style={{ fontStyle: 'italic', color: '#ffffff', marginTop: '0.5rem' }}>
-        Message:<br />
+        <span style={{fontWeight: 'bold',}}>
+        ひとことメッセージ：</span><br />
         {message} {/* メッセージを表示 */}
 </p>
 
