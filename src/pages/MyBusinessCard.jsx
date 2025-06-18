@@ -31,7 +31,7 @@ function MyBusinessCard() {
   }}>
     {/* ヘッダー */}
     <header style={{
-      width: '100%',
+      width: '90%',
       backgroundColor: '#fff',
       padding: '1.5rem 2rem',
       boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
