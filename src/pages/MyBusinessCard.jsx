@@ -13,6 +13,7 @@ function MyBusinessCard() {
       display: 'flex',
       minHeight: '100vh',
       backgroundColor: "#f0f0f0",
+      margin: 0;
       boxSizing: 'border-box',
       color: "#000000",
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
