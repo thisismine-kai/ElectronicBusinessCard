@@ -14,7 +14,6 @@ function MyBusinessCard() {
       minHeight: '100vh',
       backgroundColor: "#f0f0f0",
       boxSizing: 'border-box',
-      margin: 0;
       color: "#000000",
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     }}>
