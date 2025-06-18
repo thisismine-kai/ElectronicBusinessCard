@@ -22,7 +22,6 @@ function BusinessCard({name, github, skills, avatar, message}) {
         width: 80,                          // 幅80px
         height: 80,                         // 高さ80px
         borderRadius: '50%',               // 丸くする（円形に）
-        marginBottom: '0.5rem'             // 下に少し余白
       }}/>
 
        {/* ユーザー名を表示（見出しサイズ） */}
