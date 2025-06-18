@@ -50,7 +50,7 @@ function MyBusinessCard() {
       <button
         onClick={handleEditClick}
         style={{
-          padding: '0.6rem 1.2rem',
+          padding: '0.6rem 0.6rem',
           backgroundColor: '#007bff',
           border: 'none',
           borderRadius: '8px',
