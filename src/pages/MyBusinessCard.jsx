@@ -12,7 +12,7 @@ function MyBusinessCard() {
     <div style={{ display: 'flex', minHeight: '100vh', fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}>
   {/* サイドバー */}
   <aside style={{
-    width: '220px',
+    width: '280px',
     backgroundColor: '#1e1e1e',
     color: 'white',
     padding: '1rem',
