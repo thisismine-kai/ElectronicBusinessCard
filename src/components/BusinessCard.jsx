@@ -3,8 +3,8 @@ import { skillIcons } from '../data/skillIcons';
 function BusinessCard({name, github, skills, avatar, message}) {
   return (
     <div style={{
-      border: '1px solid #ccc',            // 薄いグレーの枠線
-      borderRadius: '8px',                 // 四隅を丸くする（角の丸み）
+      border: '2px solid #aaa',            // 薄いグレーの枠線
+      borderRadius: '16px',                 // 四隅を丸くする（角の丸み）
       padding: '1rem',                     // 内側に余白
       backgroundColor: '#3b3b3b' ,             // 背景を白にする
 
@@ -27,7 +27,7 @@ function BusinessCard({name, github, skills, avatar, message}) {
        {/* ユーザー名を表示（見出しサイズ） */}
       <h3 style={{
         color: '#ffffff',
-        fontSize: '1.5rem', // フォントサイズを大きく
+        fontSize: '2rem', // フォントサイズを大きく
         }}>{name}</h3>
 
       </div>
@@ -36,7 +36,7 @@ function BusinessCard({name, github, skills, avatar, message}) {
       <a href={github} target="_blank" style={{
         maxWidth: '100%', 
          wordBreak: 'break-all',
-         fontSize: '1rem',
+         fontSize: '1.5rem',
          textDecoration: 'underline', // 下線を引く
       }}>
         <img 
