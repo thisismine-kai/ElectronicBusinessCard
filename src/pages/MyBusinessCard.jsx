@@ -28,11 +28,11 @@ function MyBusinessCard() {
         <SidebarList />
       </div>
 
-      {/* メインエリア（グレー背景） */}
+      {/* メインエリア*/}
       <main style={{
         flex: 1,
         backgroundColor: '#f0f0f0',  // グレー背景をここで指定
-        padding: '3rem 1rem 3rem 2rem', // 右余白1remに減らす、左は2rem
+        padding: '2rem 1rem', 
         display: 'flex',
         justifyContent: 'center',     // 横方向中央寄せ
         alignItems: 'flex-start',
@@ -41,7 +41,7 @@ function MyBusinessCard() {
         {/* 名刺カードのコンテナ */}
         <section style={{
           width: '100%',
-          maxWidth: '720px',      // 最大幅広げてカード大きく
+          maxWidth: '1000px',      // 最大幅広げてカード大きく
           backgroundColor: '#fff',
           padding: '2.5rem',
           borderRadius: '12px',
@@ -87,6 +87,7 @@ function MyBusinessCard() {
             github={cards[0].github}
             skills={cards[0].skills}
             avatar={cards[0].avatar}
+            message={cards[0].message}
           />
         </section>
       </main>
