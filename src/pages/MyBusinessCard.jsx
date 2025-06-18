@@ -20,7 +20,7 @@ function MyBusinessCard() {
       
       {/* 左サイドバー */}
       <div style={{
-        width: '250px',
+        width: '280px',
         backgroundColor: '#1e1e1e',
         padding: '1rem',
         color: 'white',
