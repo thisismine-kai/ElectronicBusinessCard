@@ -10,7 +10,6 @@ function MyBusinessCard() {
 
   return (
     <div style={{ 
-      display: 'flex', 
       minHeight: '100vh', 
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       margin: 0,       // 追加
