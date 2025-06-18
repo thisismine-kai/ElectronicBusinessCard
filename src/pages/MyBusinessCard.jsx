@@ -32,7 +32,7 @@ function MyBusinessCard() {
       <main style={{
         flex: 1,
         backgroundColor: '#f0f0f0',  // グレー背景をここで指定
-        padding: '2rem 1rem', 
+        padding: '0rem', 
         display: 'flex',
         justifyContent: 'center',     // 横方向中央寄せ
         alignItems: 'flex-start',
