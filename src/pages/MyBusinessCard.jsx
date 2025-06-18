@@ -35,7 +35,7 @@ function MyBusinessCard() {
         padding: '0rem', 
         display: 'flex',
         justifyContent: 'center',     // 横方向中央寄せ
-        alignItems: 'flex-start',
+        alignItems: 'center',
       }}>
 
         {/* 名刺カードのコンテナ */}
