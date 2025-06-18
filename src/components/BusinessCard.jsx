@@ -36,7 +36,7 @@ function BusinessCard({name, github, skills, avatar, message}) {
       <a href={github} target="_blank" style={{
         maxWidth: '100%', 
          wordBreak: 'break-all',
-         fontSize: '1.5rem',
+         fontSize: '1rem',
          textDecoration: 'underline', // 下線を引く
       }}>
         <img 
